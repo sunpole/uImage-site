@@ -1,0 +1,28 @@
+{
+  "version": "v0.2.0",
+  "date": "2026-07-15",
+  "ru": {
+    "title": "Первый рабочий прототип",
+    "summary": "uImage уже превращает изображение в черновую векторную картину по номерам.",
+    "changes": [
+      "Движок сокращает изображение до выбранного количества цветов.",
+      "Находит отдельные области и присваивает им номера.",
+      "Создаёт редактируемый SVG со слоями заливок, контуров и подписей.",
+      "Добавлены автоматические проверки и история обновлений."
+    ],
+    "next": "Дальше улучшим контуры, мелкие области и размещение номеров."
+  },
+  "en": {
+    "title": "First working prototype",
+    "summary": "uImage can now turn an image into a draft vector paint-by-numbers design.",
+    "changes": [
+      "The engine reduces an image to a selected number of colours.",
+      "It finds separate regions and assigns their numbers.",
+      "It creates an editable SVG with fill, outline, and label layers.",
+      "Automated checks and this update history are now in place."
+    ],
+    "next": "Next we will improve contours, small regions, and number placement."
+  },
+  "screenshots": []
+}
+

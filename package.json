@@ -1,0 +1,14 @@
+{
+  "name": "uimage-public-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "new:patch": "node scripts/new-patch.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test",
+    "build": "node scripts/build.mjs",
+    "check": "npm run validate && npm test && npm run build"
+  }
+}
+

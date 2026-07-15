@@ -1,0 +1,25 @@
+{
+  "version": "v0.2.2",
+  "date": "2026-07-15",
+  "ru": {
+    "title": "Первый SVG можно проверить локально",
+    "summary": "Добавили простую команду, которая создаёт тестовую картину по номерам и сохраняет её как редактируемый SVG.",
+    "changes": [
+      "Демонстрация запускается одной командой на Mac или Windows.",
+      "SVG содержит отдельные слои заливок, контуров и номеров.",
+      "Добавлены правила релизов, тестирования и публичных патчноутов."
+    ],
+    "next": "Дальше улучшим контуры и подготовим обработку пользовательского изображения."
+  },
+  "en": {
+    "title": "The first SVG can now be tested locally",
+    "summary": "A simple command now creates a sample paint-by-numbers design and saves it as an editable SVG.",
+    "changes": [
+      "The demo runs with one command on macOS or Windows.",
+      "The SVG contains separate fill, outline, and number layers.",
+      "Release, testing, and public patch-note rules are now documented."
+    ],
+    "next": "Next we will improve contours and prepare user-image processing."
+  },
+  "screenshots": []
+}

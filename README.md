@@ -2,6 +2,9 @@
 
 [Русский](#русский) · [English](#english)
 
+[![Открыть сайт uImage](https://img.shields.io/badge/Website-Open_uImage-ff765d?style=for-the-badge&logo=githubpages&logoColor=white)](https://sunpole.github.io/uImage-site/?lang=ru)
+[![Репозиторий сайта](https://img.shields.io/badge/GitHub-uImage--site-24292f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sunpole/uImage-site)
+
 ## Русский
 
 Публичный сайт и короткие пользовательские патчноуты uImage. Закрытый движок, исследования красок и внутренняя документация в этот репозиторий не переносятся.
@@ -51,4 +54,3 @@ GitHub Pages updates automatically. Never publish private code, private links, s
 ## Publishing the repository
 
 The one-time publishing command is documented in [`scripts/publish_repo.sh`](scripts/publish_repo.sh).
-

@@ -1,0 +1,25 @@
+{
+  "version": "v0.2.1",
+  "date": "2026-07-15",
+  "ru": {
+    "title": "Сайт переехал в открытый репозиторий",
+    "summary": "Новости uImage теперь публикуются отдельно от закрытого движка — сайт проще обновлять и безопаснее показывать.",
+    "changes": [
+      "Сайт и патчноуты получили отдельный публичный репозиторий.",
+      "Закрытый код движка больше не участвует в публикации сайта.",
+      "Обновления можно сопровождать коротким текстом и скриншотами."
+    ],
+    "next": "Продолжаем улучшать контуры, мелкие области и размещение номеров."
+  },
+  "en": {
+    "title": "The site moved to a public repository",
+    "summary": "uImage news is now published separately from the private engine, making the site easier and safer to update.",
+    "changes": [
+      "The website and patch notes now have their own public repository.",
+      "Private engine code is no longer involved in publishing the site.",
+      "Updates can include a short explanation and optional screenshots."
+    ],
+    "next": "Next we will improve contours, small regions, and number placement."
+  },
+  "screenshots": []
+}

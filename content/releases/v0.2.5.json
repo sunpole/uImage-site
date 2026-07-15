@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.5",
+  "date": "2026-07-15",
+  "ru": {
+    "title": "Единая настройка для Mac и Windows",
+    "summary": "Проект теперь проверяет рабочее окружение и одинаково запускает проверки на Mac с Apple Silicon и Windows x64.",
+    "changes": [
+      "Одна команда проверяет версии Node.js, npm, Git и основные ресурсы компьютера.",
+      "Релиз автоматически проверяется на macOS, Windows и Linux.",
+      "Описаны правила алгоритмов, оценки качества и особенности разных художественных материалов.",
+      "Исправлена работа внутренних путей данных в Windows."
+    ],
+    "next": "Дальше займёмся объединением мелких областей и более гладкими векторными контурами."
+  },
+  "en": {
+    "title": "One setup for Mac and Windows",
+    "summary": "The project now checks its environment and runs the same validation workflow on Apple Silicon Macs and Windows x64 PCs.",
+    "changes": [
+      "One command checks Node.js, npm, Git, and basic computer resources.",
+      "Releases are automatically validated on macOS, Windows, and Linux.",
+      "Algorithm rules, quality measures, and medium-specific behavior are documented.",
+      "Internal data paths now work correctly on Windows."
+    ],
+    "next": "Next we will merge tiny regions and produce smoother vector contours."
+  },
+  "screenshots": []
+}

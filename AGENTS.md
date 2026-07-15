@@ -24,6 +24,7 @@ This file applies to every human or automated agent working in this public repos
 - Do not promise dates, precision, material availability, or production readiness without approved evidence.
 - Keep the newest patch first; the build script sorts versions and validation limits text length.
 - Preserve LF line endings and keep generated `dist/` untracked.
+- Node.js 22 is the site build baseline. Shared npm commands must work in macOS zsh and Windows PowerShell without a Unix-only shell dependency.
 
 ---
 
@@ -35,4 +36,4 @@ This file applies to every human or automated agent working in this public repos
 - Перед публикацией обязательна команда `npm run check`; после неё проверяется живой сайт.
 - Код движка, закрытые ссылки, данные материалов, поставщиков, клиентов, ключи и коммерческие расчёты запрещены.
 - Ошибка исправляется новой patch-версией, а опубликованная запись незаметно не переписывается.
-
+- Сайт собирается на Node.js 22; общие npm-команды обязаны одинаково работать в macOS zsh и Windows PowerShell.

@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.19",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Больше оттенков для света, тени и рефлексов",
+    "summary": "Разделили число цветов и настройки сохранения небольших тональных акцентов.",
+    "changes": [
+      "Добавлен отдельный стресс-тест на 36, 48, 60, 72 и 96 цветов.",
+      "Редкие оттенки и светлотный контраст теперь регулируются независимо.",
+      "Отчёт показывает сохранившиеся цвета, области, предупреждения и время.",
+      "Проверки Windows, macOS и Linux успешно пройдены."
+    ],
+    "next": "Дальше добавим независимые фильтры растра: шумоподавление, локальный контраст и защиту света и тени."
+  },
+  "en": {
+    "title": "More shades for light, shadow, and reflections",
+    "summary": "Palette size is now separate from controls that retain small tonal accents.",
+    "changes": [
+      "A separate 36, 48, 60, 72, and 96-color stress test is available.",
+      "Rare shades and lightness contrast can now be adjusted independently.",
+      "Reports show surviving colors, regions, warnings, and runtime.",
+      "Windows, macOS, and Linux release checks passed."
+    ],
+    "next": "Next we will add independent raster filters for denoise, local contrast, and highlight/shadow protection."
+  },
+  "screenshots": []
+}

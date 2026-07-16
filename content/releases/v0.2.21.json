@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.21",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Мелкие области больше не остаются без номера незаметно",
+    "summary": "uImage проверяет, помещается ли читаемая цифра, и безопасно объединяет только небольшие близкие по цвету области.",
+    "changes": [
+      "После каждого слияния размещение номеров проверяется заново.",
+      "Контрастные и большие детали не удаляются только ради цифры.",
+      "Области без безопасного решения теперь явно проваливают производственную проверку.",
+      "Фото- и стресс-отчёты показывают число слияний и оставшихся нерешённых номеров."
+    ],
+    "next": "Дальше добавим выносные номера и защиту важных границ изображения."
+  },
+  "en": {
+    "title": "Tiny regions no longer lose their numbers silently",
+    "summary": "uImage checks whether a readable digit fits and safely merges only small regions with sufficiently similar neighboring colors.",
+    "changes": [
+      "Number placement is checked again after every merge round.",
+      "Large or contrasting details are not removed merely to fit a digit.",
+      "Regions without a safe answer now explicitly fail the production check.",
+      "Photo and stress reports show safe merges and remaining unresolved numbers."
+    ],
+    "next": "Next we will add leader-line numbers and protect important image edges."
+  },
+  "screenshots": []
+}

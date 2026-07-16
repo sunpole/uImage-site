@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.7",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Контуры стали заметно плавнее",
+    "summary": "Движок теперь собирает границы в общие цепочки и осторожно сокращает лишние ступенчатые точки.",
+    "changes": [
+      "Каждая общая граница между цветами строится только один раз.",
+      "В тестовом примере контур сокращён с 523 до 95 точек.",
+      "Точные заливки сохранены, поэтому упрощение не создаёт щелей.",
+      "SVG остаётся редактируемым и содержит отдельные слои."
+    ],
+    "next": "Дальше перенесём общие контуры в заливки и зададим точность в единицах печати."
+  },
+  "en": {
+    "title": "Outlines are visibly smoother",
+    "summary": "The engine now joins borders into shared chains and carefully removes unnecessary staircase points.",
+    "changes": [
+      "Each shared border between colors is represented only once.",
+      "The sample outline is reduced from 523 points to 95.",
+      "Exact fills are preserved, so simplification cannot create gaps.",
+      "The SVG remains editable with separate layers."
+    ],
+    "next": "Next we will derive fills from shared contours and express accuracy in print units."
+  },
+  "screenshots": []
+}

@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.15",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Теперь можно сравнивать реальные фотографии",
+    "summary": "uImage получил закрытый локальный тест фотографий с тремя уровнями детализации и двумя видами номеров.",
+    "changes": [
+      "Добавлена загрузка JPEG, PNG и WebP для локального теста.",
+      "Каждое изображение строится на 8, 16 и 24 цвета.",
+      "Можно сравнить точные векторные и редактируемые шрифтовые номера.",
+      "Исходные фотографии и результаты не публикуются автоматически."
+    ],
+    "next": "Дальше ограничим сложность областей, потому что одного числа красок для производства недостаточно."
+  },
+  "en": {
+    "title": "Real photographs can now be compared",
+    "summary": "uImage now has a private local photo test with three detail levels and two number styles.",
+    "changes": [
+      "Local tests can now load JPEG, PNG, and WebP files.",
+      "Each image is generated with 8, 16, and 24 colors.",
+      "Exact vector numbers and editable font labels can be compared.",
+      "Source photographs and results are not published automatically."
+    ],
+    "next": "Next we will limit region complexity because color count alone is not enough for production."
+  },
+  "screenshots": []
+}

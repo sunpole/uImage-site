@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.11",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Плавность контура теперь связана с размером печати",
+    "summary": "Допуск контура задаётся в миллиметрах готовой работы и одинаково действует на исходниках разного разрешения.",
+    "changes": [
+      "Размер упрощения больше не зависит напрямую от числа пикселей.",
+      "В файл записываются заданный предел и фактическое отклонение.",
+      "У каждого режима появились предварительные физические настройки.",
+      "Старый пиксельный параметр пока поддерживается для перехода."
+    ],
+    "next": "Дальше улучшим размещение номеров внутри сложных областей."
+  },
+  "en": {
+    "title": "Contour smoothness now follows print size",
+    "summary": "Contour tolerance is now set in final-output millimetres and behaves consistently across different source resolutions.",
+    "changes": [
+      "Simplification no longer depends directly on the pixel count.",
+      "The requested limit and measured deviation are stored in the output.",
+      "Each product mode now has provisional physical settings.",
+      "The previous pixel option remains available during migration."
+    ],
+    "next": "Next we will improve number placement inside complex regions."
+  },
+  "screenshots": []
+}

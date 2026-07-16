@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.8",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Один движок для разных продуктов",
+    "summary": "Начали обязательный этап A: картина, раскраска и открытка по номерам теперь описаны как профили общего движка.",
+    "changes": [
+      "Добавлены три предварительных профиля продуктов.",
+      "Толщина линии теперь задаётся в физических миллиметрах.",
+      "Планы разделены на обязательные A, развивающие B и дополнительные C.",
+      "Зафиксированы правила модульного кода без огромных файлов."
+    ],
+    "next": "Следующий шаг A — безопасные плавные заливки без щелей и наложений."
+  },
+  "en": {
+    "title": "One engine for several products",
+    "summary": "Priority A has started: paint, coloring, and postcard products are now profiles of one shared engine.",
+    "changes": [
+      "Three provisional product profiles were added.",
+      "Outline width is now specified in physical millimetres.",
+      "The plan is split into required A, expanding B, and optional C work.",
+      "Modular code rules now prevent oversized implementation files."
+    ],
+    "next": "The next A step is safe smooth fills without gaps or overlaps."
+  },
+  "screenshots": []
+}

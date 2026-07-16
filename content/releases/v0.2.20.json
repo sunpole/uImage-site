@@ -1,0 +1,56 @@
+{
+  "version": "v0.2.20",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Минимальная высота цифр теперь задаётся в миллиметрах",
+    "summary": "uImage проверяет видимую высоту номера в готовой работе и не подставляет слишком мелкую нечитаемую цифру без предупреждения.",
+    "changes": [
+      "По умолчанию минимальная видимая высота цифры составляет 1,5 мм.",
+      "Значения меньше 1 мм разрешены для особых задач, но отмечаются предупреждением.",
+      "Векторные цифры измеряются точно, а для обычного шрифта учитывается отдельная метрика гарнитуры.",
+      "Добавлено первое публичное сравнение двух фотографий и векторных результатов на 16 цветов."
+    ],
+    "next": "Дальше добавим защиту важных границ и отдельные настройки света, теней и сглаживания."
+  },
+  "en": {
+    "title": "Minimum digit height is now set in millimetres",
+    "summary": "uImage checks the visible number height in the final artwork and does not silently insert an unreadably small digit.",
+    "changes": [
+      "The default minimum visible digit height is 1.5 mm.",
+      "Values below 1 mm remain available for special work but produce a warning.",
+      "Vector digits are measured exactly, while editable fonts use a separate typeface metric.",
+      "The first public comparison now shows two photographs and their 16-color vector results."
+    ],
+    "next": "Next we will protect important edges and add separate highlight, shadow, and smoothing controls."
+  },
+  "screenshots": [
+    {
+      "src": "./screenshots/v0.2.20/yacht-original.svg",
+      "alt": {
+        "ru": "Исходная фотография яхты, разрешённая владельцем проекта для публичной демонстрации",
+        "en": "Original yacht photograph approved by the project owner for the public demonstration"
+      }
+    },
+    {
+      "src": "./screenshots/v0.2.20/yacht-vector.svg",
+      "alt": {
+        "ru": "Векторный результат uImage для фотографии яхты: 16 цветов и номера физической высоты",
+        "en": "uImage vector result for the yacht photograph with 16 colors and physically sized digits"
+      }
+    },
+    {
+      "src": "./screenshots/v0.2.20/mountain-original.svg",
+      "alt": {
+        "ru": "Исходная фотография гор и леса, разрешённая владельцем проекта для публичной демонстрации",
+        "en": "Original mountain and forest photograph approved by the project owner for the public demonstration"
+      }
+    },
+    {
+      "src": "./screenshots/v0.2.20/mountain-vector.svg",
+      "alt": {
+        "ru": "Векторный результат uImage для фотографии гор: 16 цветов и номера физической высоты",
+        "en": "uImage vector result for the mountain photograph with 16 colors and physically sized digits"
+      }
+    }
+  ]
+}

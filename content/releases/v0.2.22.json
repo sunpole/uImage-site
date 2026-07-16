@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.22",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Фотодемо теперь запускается сразу после обновления",
+    "summary": "Уменьшенные тестовые фотографии яхты и гор теперь входят в проект и одинаково доступны на Mac и Windows.",
+    "changes": [
+      "Больше не нужно вручную переносить тестовые изображения между компьютерами.",
+      "Обычное фотодемо автоматически обрабатывает оба примера.",
+      "Тяжёлый тест большого числа цветов без пути использует пример яхты.",
+      "Целостность тестовых изображений проверяется перед каждым использованием."
+    ],
+    "next": "Дальше добавим выносные номера для деталей, в которые цифра не помещается."
+  },
+  "en": {
+    "title": "The photo demo now runs immediately after updating",
+    "summary": "Reduced yacht and mountain test photos are now bundled with the project and available on both Mac and Windows.",
+    "changes": [
+      "Test images no longer need to be copied manually between computers.",
+      "The normal photo demo automatically processes both examples.",
+      "The high-color stress test uses the yacht example when no path is supplied.",
+      "Test-image integrity is verified before every use."
+    ],
+    "next": "Next we will add leader-line numbers for details that cannot hold an internal digit."
+  },
+  "screenshots": []
+}

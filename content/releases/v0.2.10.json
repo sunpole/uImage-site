@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.10",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Заливки и линии теперь совпадают точнее",
+    "summary": "Перевели прототип на общую безопасную геометрию: соседние цветные области используют одну и ту же границу.",
+    "changes": [
+      "Заливки больше не собираются из отдельных пиксельных полос.",
+      "Отверстия и сложные стыки областей сохраняются.",
+      "Опасное упрощение автоматически возвращается к точному контуру.",
+      "Демо стало компактнее, но линии пока остаются многоугольными."
+    ],
+    "next": "Следующий шаг — привязать плавность контура к реальному размеру печати и улучшить размещение номеров."
+  },
+  "en": {
+    "title": "Fills and outlines now match more precisely",
+    "summary": "The prototype now uses one protected geometry: neighboring color regions share the same mathematical border.",
+    "changes": [
+      "Fills are no longer assembled from separate pixel rows.",
+      "Holes and complex region junctions are preserved.",
+      "Unsafe simplification automatically returns to the exact contour.",
+      "The demo is more compact, although paths are still polygonal."
+    ],
+    "next": "Next we will tie contour smoothness to physical print size and improve number placement."
+  },
+  "screenshots": []
+}

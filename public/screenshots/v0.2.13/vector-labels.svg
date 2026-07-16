@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="120mm" viewBox="0 0 64 48">
+  <title>uImage v0.2.13 vector label preview</title>
+  <g id="fills">
+    <path id="region-1" d="M0 28L0 0L64 0L64 28L36 28L36 27L33 27L33 26L30 26L30 25L27 25L29 22L19 22L18 21L18 22L12 22L13 24L10 24L10 25L7 25L7 26L4 26L4 27L0 28ZM49 4L49 5L46 5L44 7L43 11L44 11L44 14L46 16L50 17L50 16L53 16L55 14L56 10L55 10L55 7L53 5L49 4Z" fill="#dcedf6" fill-rule="evenodd"/>
+    <path id="region-2" d="M49 4L53 5L55 7L55 10L56 10L55 14L53 16L50 16L50 17L46 16L44 14L44 11L43 11L44 7L46 5L49 5L49 4Z" fill="#f2a641" fill-rule="evenodd"/>
+    <path id="region-3" d="M13 24L12 22L18 22L18 21L19 22L29 22L27 25L25 27L24 28L17 28L16 27L13 24Z" fill="#5b3f37" fill-rule="evenodd"/>
+    <path id="region-4" d="M22 48L0 48L0 28L4 27L4 26L7 26L7 25L10 25L10 24L13 24L16 27L13 27L13 39L18 39L22 39L25 39L22 48Z" fill="#619159" fill-rule="evenodd"/>
+    <path id="region-5" d="M64 28L64 48L43 48L42 43L39 39L39 36L37 34L37 32L28 32L28 27L25 27L27 25L30 25L30 26L33 26L33 27L36 27L36 28L64 28Z" fill="#619159" fill-rule="evenodd"/>
+    <path id="region-6" d="M16 27L17 28L24 28L25 27L28 27L28 32L28 39L25 39L22 39L22 32L18 32L18 30L14 30L14 34L18 34L18 39L13 39L13 27L16 27Z" fill="#b44c39" fill-rule="evenodd"/>
+    <path id="region-7" d="M18 34L14 34L14 30L18 30L18 32L18 34Z" fill="#f5e29e" fill-rule="evenodd"/>
+    <path id="region-8" d="M22 39L18 39L18 34L18 32L22 32L22 39Z" fill="#5b3f37" fill-rule="evenodd"/>
+    <path id="region-9" d="M43 48L22 48L25 39L28 39L28 32L37 32L37 34L39 36L39 39L42 43L43 48Z" fill="#468fb8" fill-rule="evenodd"/>
+  </g>
+  <g id="outlines" fill="none" stroke="#111" stroke-width="0.06" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 28L0 0L64 0L64 28M22 48L0 48L0 28M64 28L64 48L43 48M43 48L22 48M49 4L53 5L55 7L55 10L56 10L55 14L53 16L50 16L50 17L46 16L44 14L44 11L43 11L44 7L46 5L49 5L49 4M13 24L12 22L18 22L18 21L19 22L29 22L27 25M0 28L4 27L4 26L7 26L7 25L10 25L10 24L13 24M27 25L30 25L30 26L33 26L33 27L36 27L36 28L64 28M13 24L16 27M25 27L27 25M16 27L17 28L24 28L25 27M18 39L13 39L13 27L16 27M25 39L22 39M22 39L18 39M22 48L25 39M25 27L28 27L28 32M28 32L37 32L37 34L39 36L39 39L42 43L43 48M18 34L14 34L14 30L18 30L18 32M18 32L22 32L22 39M18 39L18 34M25 39L28 39L28 32M18 34L18 32"/>
+  </g>
+  <g id="labels" fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path data-region-id="region-1" aria-label="8" d="M30.6 10L31.4 10M31.6 10.16L31.6 10.92M31.6 11.08L31.6 11.84M31.4 12L30.6 12M30.4 11.84L30.4 11.08M30.4 10.92L30.4 10.16M30.6 11L31.4 11" stroke-width="0.16"><title>8</title></path>
+    <path data-region-id="region-2" aria-label="5" d="M49.1 9.5L49.9 9.5M50.1 10.58L50.1 11.34M49.9 11.5L49.1 11.5M48.9 10.42L48.9 9.66M49.1 10.5L49.9 10.5" stroke-width="0.16"><title>5</title></path>
+    <path data-region-id="region-3" aria-label="1" d="M21.1 24.16L21.1 24.92M21.1 25.08L21.1 25.84" stroke-width="0.16"><title>1</title></path>
+    <path data-region-id="region-4" aria-label="3" d="M6.1 37L6.9 37M7.1 37.16L7.1 37.92M7.1 38.08L7.1 38.84M6.9 39L6.1 39M6.1 38L6.9 38" stroke-width="0.16"><title>3</title></path>
+    <path data-region-id="region-5" aria-label="3" d="M53.1 37L53.9 37M54.1 37.16L54.1 37.92M54.1 38.08L54.1 38.84M53.9 39L53.1 39M53.1 38L53.9 38" stroke-width="0.16"><title>3</title></path>
+    <path data-region-id="region-6" aria-label="2" d="M24.6 32.5L25.4 32.5M25.6 32.66L25.6 33.42M25.4 34.5L24.6 34.5M24.4 34.34L24.4 33.58M24.6 33.5L25.4 33.5" stroke-width="0.16"><title>2</title></path>
+    <path data-region-id="region-7" aria-label="7" d="M15.6 31L16.4 31M16.6 31.16L16.6 31.92M16.6 32.08L16.6 32.84" stroke-width="0.16"><title>7</title></path>
+    <path data-region-id="region-8" aria-label="1" d="M20.6 34.66L20.6 35.42M20.6 35.58L20.6 36.34" stroke-width="0.16"><title>1</title></path>
+    <path data-region-id="region-9" aria-label="4" d="M34.1 41.16L34.1 41.92M34.1 42.08L34.1 42.84M32.9 41.92L32.9 41.16M33.1 42L33.9 42" stroke-width="0.16"><title>4</title></path>
+  </g>
+</svg>

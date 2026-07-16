@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.9",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Правила проекта теперь проверяются автоматически",
+    "summary": "Собрали приоритеты, документацию, этику, релизы, зависимости и работу на Mac/Windows в один понятный контракт.",
+    "changes": [
+      "Добавлена единая точка входа во все правила проекта.",
+      "Обычная проверка теперь ищет циклы и слишком крупные модули.",
+      "Новые библиотеки должны иметь lockfile, назначение и проверенную лицензию.",
+      "Процесс сохраняет релизы и короткие двуязычные патчноуты."
+    ],
+    "next": "Возвращаемся к этапу A: безопасным плавным заливкам движка."
+  },
+  "en": {
+    "title": "Project rules are now checked automatically",
+    "summary": "Priorities, documentation, ethics, releases, dependencies, and Mac/Windows work now form one clear contract.",
+    "changes": [
+      "One entrypoint now links every project rule.",
+      "The standard check now detects cycles and oversized modules.",
+      "New libraries require a lockfile, purpose, and reviewed license.",
+      "The workflow preserves releases and short bilingual patch notes."
+    ],
+    "next": "Development returns to priority A: safe smooth engine fills."
+  },
+  "screenshots": []
+}

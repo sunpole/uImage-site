@@ -15,9 +15,9 @@ test("site uses a natural Russian product headline", async () => {
     readFile(new URL("public/index.html", root), "utf8"),
     readFile(new URL("public/app.mjs", root), "utf8"),
   ]);
-  assert.match(html, /Картины по номерам — проще и удобнее/);
-  assert.match(app, /Картины по номерам — проще и удобнее/);
-  assert.doesNotMatch(`${html}\n${app}`, /Делаем картины по номерам удобнее/);
+  assert.match(html, /Делаем создание картин по номерам проще/);
+  assert.match(app, /Делаем создание картин по номерам проще/);
+  assert.doesNotMatch(`${html}\n${app}`, /удобнее/i);
 });
 
 test("public files do not reference the private engine repository", async () => {

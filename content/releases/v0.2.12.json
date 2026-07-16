@@ -1,0 +1,25 @@
+{
+  "version": "v0.2.12",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Номера остаются внутри сложных областей",
+    "summary": "Номера теперь получают проверенное место внутри области и учитывают физический размер готовой работы.",
+    "changes": [
+      "Номер больше не попадает за границу вогнутой области.",
+      "Размер надписи учитывает физический размер готовой работы.",
+      "Слишком маленькие области отмечаются предупреждением вместо нечитаемого номера."
+    ],
+    "next": "Дальше добавим точную проверку формы шрифта и выноски для тесных областей."
+  },
+  "en": {
+    "title": "Numbers stay inside complex regions",
+    "summary": "Numbers now receive a verified position inside each region and account for the physical size of the final artwork.",
+    "changes": [
+      "A number no longer lands outside a concave region.",
+      "Label size now follows the physical size of the final artwork.",
+      "Regions that are too small are reported instead of receiving an unreadable number."
+    ],
+    "next": "Next we will add exact font-shape checks and callouts for tight regions."
+  },
+  "screenshots": []
+}

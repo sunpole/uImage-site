@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.6",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Движок начал очищать мелкие области",
+    "summary": "Добавили первый собственный этап очистки перед трассировкой: движок понимает соседство областей и может убирать слишком мелкие фрагменты.",
+    "changes": [
+      "Для каждой пары соседних областей измеряется общая граница.",
+      "Мелкая область объединяется только с касающимся соседом по воспроизводимым правилам.",
+      "Каждое объединение записывается и может быть ограничено по различию цветов.",
+      "Тестовое изображение теперь сокращается с 11 до 9 областей."
+    ],
+    "next": "Следующий этап — общие векторные контуры без щелей и наложений."
+  },
+  "en": {
+    "title": "The engine now cleans up tiny regions",
+    "summary": "The first independent cleanup stage now runs before tracing: the engine understands region adjacency and can remove undersized fragments.",
+    "changes": [
+      "Shared boundary length is measured for every touching region pair.",
+      "A tiny region can merge only into a touching neighbor under deterministic rules.",
+      "Every merge is logged and can be limited by color difference.",
+      "The sample image now reduces from 11 regions to 9."
+    ],
+    "next": "Next comes shared vector contour tracing without gaps or overlaps."
+  },
+  "screenshots": []
+}

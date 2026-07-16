@@ -1,0 +1,35 @@
+{
+  "version": "v0.2.23",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Появились два способа работать с мелкими деталями",
+    "summary": "Теперь можно безопасно объединять подходящие детали или сохранять их и ставить номер рядом с выносной линией.",
+    "changes": [
+      "Режим слияния не перекрашивает крупные и контрастные детали молча.",
+      "Режим выносок сохраняет форму и ставит внешний номер рядом.",
+      "Линии, белые подложки и номера остаются отдельными векторными объектами.",
+      "На простых 8-цветных тестах все номера обеих фотографий удалось разместить."
+    ],
+    "next": "Дальше улучшим маршруты выносок и защиту важных деталей изображения."
+  },
+  "en": {
+    "title": "Two ways to handle small details",
+    "summary": "The engine can now merge suitable details safely or preserve them and place their number nearby with a leader line.",
+    "changes": [
+      "Merge mode does not silently recolor large or contrasting details.",
+      "Callout mode preserves the shape and places an external number nearby.",
+      "Leaders, white backgrounds, and numbers remain separate vector objects.",
+      "The simple 8-color tests placed every number on both photographs."
+    ],
+    "next": "Next we will improve callout routing and protection of important image details."
+  },
+  "screenshots": [
+    {
+      "src": "./screenshots/v0.2.23/yacht-callouts.svg",
+      "alt": {
+        "ru": "8-цветный пример яхты с внутренними и выносными номерами",
+        "en": "Eight-color yacht example with internal and callout numbers"
+      }
+    }
+  ]
+}

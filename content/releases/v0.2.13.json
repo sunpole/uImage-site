@@ -1,0 +1,35 @@
+{
+  "version": "v0.2.13",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Номера стали настоящими векторными контурами",
+    "summary": "Цифры больше не зависят от установленного шрифта и одинаково выглядят в разных системах и редакторах.",
+    "changes": [
+      "Номера теперь строятся как собственные векторные линии.",
+      "Для отображения цифр больше не требуется установленный шрифт.",
+      "Форма номера проверяется внутри доступного места области.",
+      "К патчноуту добавлен масштабируемый SVG-пример."
+    ],
+    "next": "Дальше добавим другие стили цифр и выноски для тесных областей."
+  },
+  "en": {
+    "title": "Numbers are now true vector paths",
+    "summary": "Digits no longer depend on an installed font and look consistent across systems and vector editors.",
+    "changes": [
+      "Numbers are now drawn with built-in vector lines.",
+      "Displaying digits no longer requires an installed font.",
+      "The number shape is checked against the available region space.",
+      "This patch note includes a scalable SVG preview."
+    ],
+    "next": "Next we will add alternative digit styles and callouts for tight regions."
+  },
+  "screenshots": [
+    {
+      "src": "./screenshots/v0.2.13/vector-labels.svg",
+      "alt": {
+        "ru": "Синтетический пример картины по номерам со встроенными векторными цифрами",
+        "en": "Synthetic paint-by-numbers preview with built-in vector digits"
+      }
+    }
+  ]
+}

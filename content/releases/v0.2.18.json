@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.18",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Движок теперь видит слишком тонкие области",
+    "summary": "Добавили диагностику физической ширины областей при выбранном размере работы.",
+    "changes": [
+      "Ширина областей теперь оценивается в миллиметрах готовой работы.",
+      "Картина, раскраска и открытка получили отдельные предварительные пороги.",
+      "Тонкие детали пока не удаляются: программа только показывает предупреждение.",
+      "Проверки Windows, macOS и Linux успешно пройдены."
+    ],
+    "next": "Дальше научим движок отличать случайный шум от важных мачт, веток, глаз, текста и деталей лица."
+  },
+  "en": {
+    "title": "The engine can now detect overly thin regions",
+    "summary": "We added physical-width diagnostics for regions at the selected finished size.",
+    "changes": [
+      "Region width is now estimated in millimetres of the finished work.",
+      "Painting, coloring, and postcard modes have separate provisional thresholds.",
+      "Thin details are not deleted yet; the program only reports a warning.",
+      "Windows, macOS, and Linux release checks passed."
+    ],
+    "next": "Next the engine will distinguish random noise from important masts, branches, eyes, text, and facial features."
+  },
+  "screenshots": []
+}

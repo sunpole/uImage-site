@@ -1,7 +1,7 @@
 const translations = {
   ru: {
     eyebrow: "В разработке",
-    title: "Делаем картины по номерам удобнее.",
+    title: "Картины по номерам — проще и удобнее.",
     lede: "Здесь коротко рассказываем, что уже работает и что появится дальше.",
     read: "Смотреть обновления",
     updatesEyebrow: "История разработки",
@@ -112,4 +112,3 @@ try {
 } catch {
   document.querySelector("#release-list").textContent = translations[language].error;
 }
-

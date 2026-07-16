@@ -10,6 +10,16 @@ test("site offers a visible Russian and English switch", async () => {
   assert.match(html, /data-language="en"/);
 });
 
+test("site uses a natural Russian product headline", async () => {
+  const [html, app] = await Promise.all([
+    readFile(new URL("public/index.html", root), "utf8"),
+    readFile(new URL("public/app.mjs", root), "utf8"),
+  ]);
+  assert.match(html, /Картины по номерам — проще и удобнее/);
+  assert.match(app, /Картины по номерам — проще и удобнее/);
+  assert.doesNotMatch(`${html}\n${app}`, /Делаем картины по номерам удобнее/);
+});
+
 test("public files do not reference the private engine repository", async () => {
   const files = ["public/index.html", "public/app.mjs", "public/styles.css"];
   for (const file of files) {
@@ -25,4 +35,3 @@ test("patch notes use short user-facing fields", async () => {
   assert.ok(release.ru.summary.length <= 180);
   assert.ok(release.en.summary.length <= 180);
 });
-

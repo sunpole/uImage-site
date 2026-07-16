@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.17",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Превью стало подробнее и быстрее",
+    "summary": "Увеличили рабочее превью и ускорили очистку множества мелких областей.",
+    "changes": [
+      "Длинная сторона быстрого превью увеличена со 180 до 320 пикселей.",
+      "Варианты на 8, 16 и 24 цвета получили отдельные пределы сложности.",
+      "Независимые области теперь объединяются пакетами, сокращая время обработки.",
+      "Проверки Windows, macOS и Linux успешно пройдены."
+    ],
+    "next": "Дальше защитим важные тонкие детали: мачты, ветки, глаза, текст и элементы лица."
+  },
+  "en": {
+    "title": "Previews are now clearer and faster",
+    "summary": "We increased the working preview size and sped up cleanup of many tiny regions.",
+    "changes": [
+      "The quick preview longest edge increased from 180 to 320 pixels.",
+      "The 8, 16, and 24-color variants now have separate complexity limits.",
+      "Independent regions are merged in batches to reduce processing time.",
+      "Windows, macOS, and Linux release checks passed."
+    ],
+    "next": "Next we will protect important thin details such as masts, branches, eyes, text, and facial features."
+  },
+  "screenshots": []
+}

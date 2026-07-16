@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.16",
+  "date": "2026-07-16",
+  "ru": {
+    "title": "Большие фотографии одинаково открываются на Windows и Mac",
+    "summary": "Исправили проверку размера исходника и добавили поддержку фотооригиналов до 60 мегапикселей.",
+    "changes": [
+      "Оригинал 8256×5504 теперь принимается без ручного уменьшения.",
+      "uImage сам создаёт рабочее превью и не изменяет исходный файл.",
+      "Ошибка одного изображения больше не скрывает уже созданные варианты.",
+      "Проверки Windows, macOS и Linux успешно пройдены."
+    ],
+    "next": "Дальше добавим производственные ограничения количества и размера областей."
+  },
+  "en": {
+    "title": "Large photographs now open consistently on Windows and Mac",
+    "summary": "We fixed original-image size checks and added support for camera originals up to 60 megapixels.",
+    "changes": [
+      "The 8256×5504 original is accepted without manual resizing.",
+      "uImage creates its own working preview and leaves the source file unchanged.",
+      "One failed image no longer hides variants that were already generated.",
+      "Windows, macOS, and Linux release checks passed."
+    ],
+    "next": "Next we will add production limits for region count and physical region size."
+  },
+  "screenshots": []
+}

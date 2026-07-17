@@ -50,7 +50,7 @@ test("new patch notes include an approved bilingual image", async () => {
 
 test("latest patch provides two accessible raster-to-vector comparisons", async () => {
   const [release, app] = await Promise.all([
-    readFile(new URL("content/releases/v0.2.30.json", root), "utf8").then(JSON.parse),
+    readFile(new URL("content/releases/v0.2.31.json", root), "utf8").then(JSON.parse),
     readFile(new URL("public/app.mjs", root), "utf8"),
   ]);
   assert.equal(release.comparisons.length, 2);

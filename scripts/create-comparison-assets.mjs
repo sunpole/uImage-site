@@ -27,7 +27,7 @@ for (const [name, title] of comparisons) {
   console.log(`Created ${outputPath}`);
 }
 
-for (const version of ["v0.2.28", "v0.2.29", "v0.2.30"]) {
+for (const version of ["v0.2.28", "v0.2.29", "v0.2.30", "v0.2.31"]) {
   for (const [name, title] of comparisons) {
     const colorPath = join(publicDirectory, "screenshots", version, `${name}-vector.svg`);
     const outlinePath = join(publicDirectory, "screenshots", version, `${name}-outline.svg`);

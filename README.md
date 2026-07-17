@@ -17,6 +17,8 @@ npm run check
 npm run preview
 ```
 
+Техническая заметка: локальный сервер нормализует путь к `dist`, чтобы одинаково работать с разделителями путей Windows и macOS/Linux.
+
 ### Добавить патчноут
 
 ```bash
@@ -47,6 +49,8 @@ node --version
 npm run check
 npm run preview
 ```
+
+Technical note: the local server normalizes the `dist` path so Windows and macOS/Linux path separators are handled consistently.
 
 ### Add a patch note
 

@@ -1,0 +1,75 @@
+{
+  "version": "v0.2.31",
+  "date": "2026-07-17",
+  "ru": {
+    "title": "Номера возвращаются внутрь областей",
+    "summary": "Выноски убраны из основного теста. Теперь uImage старается освободить читаемое место для номера внутри небольшого фрагмента.",
+    "changes": [
+      "Печатный размер цифр и быстрый экранный тест теперь проверяются отдельно.",
+      "Часть маленьких фрагментов удалось аккуратно увеличить без поломки границ.",
+      "Некоторые фрагменты пока остаются без номера, поэтому этап 160 пикселей ещё не готов."
+    ],
+    "next": "Дальше сравним два способа объединять оставшиеся слишком маленькие фрагменты."
+  },
+  "en": {
+    "title": "Numbers move back inside regions",
+    "summary": "Callouts are no longer part of the main test. uImage now tries to make readable room for a number inside each small fragment.",
+    "changes": [
+      "Print digit size and the quick screen test are now checked separately.",
+      "Some small fragments can now grow carefully without breaking their boundaries.",
+      "A few fragments still have no number, so the 160-pixel stage is not ready yet."
+    ],
+    "next": "Next we will compare two ways to merge the remaining fragments that are too small."
+  },
+  "screenshots": [],
+  "comparisons": [
+    {
+      "id": "yacht",
+      "title": { "ru": "Яхта — внутренние номера", "en": "Yacht — internal numbers" },
+      "aspectRatio": "16 / 9",
+      "raster": {
+        "src": "./screenshots/v0.2.20/yacht-original.svg",
+        "alt": { "ru": "Уменьшенное исходное фото яхты", "en": "Reduced source photo of a yacht" }
+      },
+      "vector": {
+        "color": "./screenshots/v0.2.31/yacht-vector.svg",
+        "outline": "./screenshots/v0.2.31/yacht-outline.svg",
+        "alt": { "ru": "Текущий тест яхты с номерами только внутри областей", "en": "Current yacht test with numbers placed only inside regions" }
+      },
+      "palette": [
+        { "number": 1, "hex": "#251315" }, { "number": 2, "hex": "#523a3a" },
+        { "number": 3, "hex": "#63392e" }, { "number": 4, "hex": "#8d513b" },
+        { "number": 5, "hex": "#8f6963" }, { "number": 6, "hex": "#66826b" },
+        { "number": 7, "hex": "#b76846" }, { "number": 8, "hex": "#b3735e" },
+        { "number": 9, "hex": "#a69f87" }, { "number": 10, "hex": "#b59f9f" },
+        { "number": 11, "hex": "#e39c7b" }, { "number": 12, "hex": "#b7c1d4" },
+        { "number": 13, "hex": "#edba98" }, { "number": 14, "hex": "#dfc7b9" },
+        { "number": 15, "hex": "#fce7c7" }, { "number": 16, "hex": "#f6f7f6" }
+      ]
+    },
+    {
+      "id": "mountain",
+      "title": { "ru": "Горный пейзаж — внутренние номера", "en": "Mountain scene — internal numbers" },
+      "aspectRatio": "160 / 107",
+      "raster": {
+        "src": "./screenshots/v0.2.20/mountain-original.svg",
+        "alt": { "ru": "Уменьшенное исходное фото горного пейзажа", "en": "Reduced source photo of a mountain scene" }
+      },
+      "vector": {
+        "color": "./screenshots/v0.2.31/mountain-vector.svg",
+        "outline": "./screenshots/v0.2.31/mountain-outline.svg",
+        "alt": { "ru": "Текущий тест горного пейзажа с номерами только внутри областей", "en": "Current mountain-scene test with numbers placed only inside regions" }
+      },
+      "palette": [
+        { "number": 1, "hex": "#221f14" }, { "number": 2, "hex": "#352f19" },
+        { "number": 3, "hex": "#474220" }, { "number": 4, "hex": "#583d18" },
+        { "number": 5, "hex": "#244c5c" }, { "number": 6, "hex": "#59501e" },
+        { "number": 7, "hex": "#585348" }, { "number": 8, "hex": "#795a1f" },
+        { "number": 9, "hex": "#736b21" }, { "number": 10, "hex": "#5b737f" },
+        { "number": 11, "hex": "#8c7b45" }, { "number": 12, "hex": "#8d8171" },
+        { "number": 13, "hex": "#8f999e" }, { "number": 14, "hex": "#bca87c" },
+        { "number": 15, "hex": "#c7bcab" }, { "number": 16, "hex": "#cbd3d5" }
+      ]
+    }
+  ]
+}

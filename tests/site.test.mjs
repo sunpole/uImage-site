@@ -50,11 +50,13 @@ test("new patch notes include an approved bilingual image", async () => {
 
 test("latest patch provides two accessible raster-to-vector comparisons", async () => {
   const [release, app] = await Promise.all([
-    readFile(new URL("content/releases/v0.2.26.json", root), "utf8").then(JSON.parse),
+    readFile(new URL("content/releases/v0.2.28.json", root), "utf8").then(JSON.parse),
     readFile(new URL("public/app.mjs", root), "utf8"),
   ]);
   assert.equal(release.comparisons.length, 2);
-  assert.deepEqual(release.replacesScreenshotsFor, ["v0.2.25"]);
+  assert.equal(release.screenshots.length, 0);
+  assert.deepEqual(release.comparisons.map(item => item.id).sort(), ["mountain", "yacht"]);
+  assert.deepEqual(release.replacesScreenshotsFor, ["v0.2.27"]);
   assert.match(app, /range\.type = "range"/);
   assert.match(app, /aria-pressed/);
   assert.match(app, /comparison\.vector\.outline/);

@@ -11,6 +11,7 @@ if (!files.length) throw new Error("At least one patch note is required.");
 
 const versions = new Set();
 const imageRequiredFrom = [0, 2, 25];
+const twoComparisonsRequiredFrom = [0, 2, 28];
 function versionParts(version) { return version.slice(1).split(".").map(Number); }
 function atLeast(left, right) {
   return left[0] > right[0]
@@ -44,6 +45,15 @@ for (const file of files) {
   const approvedMediaCount = release.screenshots.length + (release.comparisons?.length ?? 0);
   if (atLeast(versionParts(release.version), imageRequiredFrom) && approvedMediaCount === 0) {
     throw new Error(`${file}: releases from v0.2.25 require at least one approved image.`);
+  }
+  if (atLeast(versionParts(release.version), twoComparisonsRequiredFrom)) {
+    if (release.screenshots.length !== 0 || release.comparisons?.length !== 2) {
+      throw new Error(`${file}: releases from v0.2.28 require exactly two curtain comparisons and no standalone screenshots.`);
+    }
+    const comparisonIds = release.comparisons.map(comparison => comparison.id).sort();
+    if (JSON.stringify(comparisonIds) !== JSON.stringify(["mountain", "yacht"])) {
+      throw new Error(`${file}: the two required comparisons must be mountain and yacht.`);
+    }
   }
   for (const screenshot of release.screenshots) {
     if (!screenshot.src?.startsWith("./screenshots/")) throw new Error(`${file}: screenshot must use ./screenshots/.`);

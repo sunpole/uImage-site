@@ -13,7 +13,7 @@ This file applies to every human or automated agent working in this public repos
 1. Publish and verify the corresponding immutable version in private `sunpole/uImage` first.
 2. Create `content/releases/vX.Y.Z.json` with the exact same version and ISO date.
 3. Write for users, not implementers: one short title, one plain summary, one to four visible changes, and one next step in both Russian and English.
-4. Every new patch note from v0.2.25 onward includes approved visual media: screenshots or a validated static comparison. Store new assets under `public/screenshots/vX.Y.Z/`, optimize them, provide bilingual alt text, and inspect them for private content.
+4. Every new patch note from v0.2.28 onward contains exactly two validated static raster/vector curtain comparisons: yacht and mountain, each with color and outline modes. Standalone screenshots do not satisfy this rule. Store new assets under `public/screenshots/vX.Y.Z/`, optimize them, provide bilingual alt text, and inspect them for private content.
 5. Run `npm run check` before every push to `main`.
 6. A push to public `main` deploys GitHub Pages. Verify the live `releases.json` and visible language switch after deployment.
 7. Do not rewrite an already published product version. Corrections use a new patch version.
@@ -32,7 +32,7 @@ This file applies to every human or automated agent working in this public repos
 
 - Здесь находятся только сайт, короткие патчноуты EN/RU, утверждённые скриншоты, тесты и Pages-workflow.
 - Публичный патчноут создаётся только после соответствующего закрытого релиза `uImage` и использует ту же версию.
-- Формат: короткий заголовок, одно понятное описание, от одного до четырёх изменений, один следующий шаг и утверждённый визуальный материал — изображение или проверенное статическое сравнение — для каждой версии начиная с v0.2.25.
+- Формат: короткий заголовок, одно понятное описание, от одного до четырёх изменений и один следующий шаг. Начиная с v0.2.28 обязательны ровно два проверенных сравнения растра и вектора со шторкой — яхта и горы — с цветным и контурным режимами; отдельный скриншот правило не выполняет.
 - Перед публикацией обязательна команда `npm run check`; после неё проверяется живой сайт.
 - Код движка, закрытые ссылки, данные материалов, поставщиков, клиентов, ключи и коммерческие расчёты запрещены.
 - Ошибка исправляется новой patch-версией, а опубликованная запись незаметно не переписывается.

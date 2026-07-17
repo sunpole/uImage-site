@@ -1,0 +1,76 @@
+{
+  "version": "v0.2.28",
+  "date": "2026-07-17",
+  "ru": {
+    "title": "Сначала улучшаем два небольших примера",
+    "summary": "Яхта и горный пейзаж теперь показывают текущий результат на первой ступени качества — 160 пикселей.",
+    "changes": [
+      "В каждом патче будут две шторки: исходное фото и текущий векторный результат.",
+      "Для вектора доступны цветной и чёрно-белый режимы с номерами.",
+      "К большему размеру перейдём только после улучшения обоих небольших примеров."
+    ],
+    "next": "Сначала уменьшим лишние мелкие области и выноски на этих двух примерах."
+  },
+  "en": {
+    "title": "Improving two small examples first",
+    "summary": "The yacht and mountain scene now show the current result at the first quality stage: 160 pixels.",
+    "changes": [
+      "Every patch will include two curtains comparing the source photo with the current vector result.",
+      "The vector side offers color and black-and-white numbered modes.",
+      "We will move to a larger size only after both small examples improve."
+    ],
+    "next": "First we will reduce unnecessary small regions and callouts in these two examples."
+  },
+  "screenshots": [],
+  "replacesScreenshotsFor": ["v0.2.27"],
+  "comparisons": [
+    {
+      "id": "yacht",
+      "title": { "ru": "Яхта — 160 пикселей", "en": "Yacht — 160 pixels" },
+      "aspectRatio": "16 / 9",
+      "raster": {
+        "src": "./screenshots/v0.2.20/yacht-original.svg",
+        "alt": { "ru": "Уменьшенное исходное фото яхты", "en": "Reduced source photo of a yacht" }
+      },
+      "vector": {
+        "color": "./screenshots/v0.2.28/yacht-vector.svg",
+        "outline": "./screenshots/v0.2.28/yacht-outline.svg",
+        "alt": { "ru": "Текущий векторный результат uImage для яхты при 160 пикселях", "en": "Current uImage vector result for the yacht at 160 pixels" }
+      },
+      "palette": [
+        { "number": 1, "hex": "#23181f" }, { "number": 2, "hex": "#3e140a" },
+        { "number": 3, "hex": "#583c3c" }, { "number": 4, "hex": "#7c4939" },
+        { "number": 5, "hex": "#a36046" }, { "number": 6, "hex": "#926a64" },
+        { "number": 7, "hex": "#528c7a" }, { "number": 8, "hex": "#ce7954" },
+        { "number": 9, "hex": "#b39898" }, { "number": 10, "hex": "#9da58f" },
+        { "number": 11, "hex": "#d9987d" }, { "number": 12, "hex": "#b6c1d4" },
+        { "number": 13, "hex": "#d5c1ba" }, { "number": 14, "hex": "#f0ba97" },
+        { "number": 15, "hex": "#fbe3c4" }, { "number": 16, "hex": "#f6f7f7" }
+      ]
+    },
+    {
+      "id": "mountain",
+      "title": { "ru": "Горный пейзаж — 160 пикселей", "en": "Mountain scene — 160 pixels" },
+      "aspectRatio": "160 / 107",
+      "raster": {
+        "src": "./screenshots/v0.2.20/mountain-original.svg",
+        "alt": { "ru": "Уменьшенное исходное фото горного пейзажа", "en": "Reduced source photo of a mountain scene" }
+      },
+      "vector": {
+        "color": "./screenshots/v0.2.28/mountain-vector.svg",
+        "outline": "./screenshots/v0.2.28/mountain-outline.svg",
+        "alt": { "ru": "Текущий векторный результат uImage для горного пейзажа при 160 пикселях", "en": "Current uImage vector result for the mountain scene at 160 pixels" }
+      },
+      "palette": [
+        { "number": 1, "hex": "#201e15" }, { "number": 2, "hex": "#35301c" },
+        { "number": 3, "hex": "#46421e" }, { "number": 4, "hex": "#593d1d" },
+        { "number": 5, "hex": "#264f60" }, { "number": 6, "hex": "#58544a" },
+        { "number": 7, "hex": "#60541f" }, { "number": 8, "hex": "#825a1c" },
+        { "number": 9, "hex": "#756b1d" }, { "number": 10, "hex": "#697d88" },
+        { "number": 11, "hex": "#95814a" }, { "number": 12, "hex": "#8f8374" },
+        { "number": 13, "hex": "#bea980" }, { "number": 14, "hex": "#c5bbaa" },
+        { "number": 15, "hex": "#b3c7ce" }, { "number": 16, "hex": "#d4d7d6" }
+      ]
+    }
+  ]
+}

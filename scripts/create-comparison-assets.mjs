@@ -26,3 +26,21 @@ for (const [name, title] of comparisons) {
   await writeFile(outputPath, outline, "utf8");
   console.log(`Created ${outputPath}`);
 }
+
+for (const [name, title] of comparisons) {
+  const colorPath = join(publicDirectory, "screenshots", "v0.2.28", `${name}-vector.svg`);
+  const outlinePath = join(publicDirectory, "screenshots", "v0.2.28", `${name}-outline.svg`);
+  const source = await readFile(colorPath, "utf8");
+  const publicSource = source
+    .replace(/  <metadata>[\s\S]*?<\/metadata>/, "  <metadata>Static uImage v0.2.28 comparison at the 160 px quality stage</metadata>")
+    .replace("<title>uImage paint-by-numbers prototype</title>", `<title>${title} at the 160 px quality stage</title>`);
+  const fillsMatch = publicSource.match(/<g id="fills">([\s\S]*?)<\/g>/);
+  if (!fillsMatch) throw new Error(`${colorPath}: fills layer not found.`);
+
+  const whiteFills = fillsMatch[0].replaceAll(/ fill="#[0-9a-f]{6}"/gi, " fill=\"#fff\"");
+  const outline = publicSource.replace(fillsMatch[0], whiteFills);
+
+  await writeFile(colorPath, publicSource, "utf8");
+  await writeFile(outlinePath, outline, "utf8");
+  console.log(`Prepared ${colorPath} and ${outlinePath}`);
+}

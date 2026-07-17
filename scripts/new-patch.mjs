@@ -36,13 +36,37 @@ const template = {
     changes: ["First visible change."],
     next: "What we plan to improve next."
   },
-  screenshots: [
+  screenshots: [],
+  comparisons: [
     {
-      src: `./screenshots/${version}/approved-image.svg`,
-      alt: {
-        ru: "Короткое описание утверждённого изображения",
-        en: "Short description of the approved image"
-      }
+      id: "yacht",
+      title: { ru: "Яхта", en: "Yacht" },
+      aspectRatio: "16 / 9",
+      raster: {
+        src: "./screenshots/v0.2.20/yacht-original.svg",
+        alt: { ru: "Уменьшенное исходное фото яхты", en: "Reduced source photo of a yacht" }
+      },
+      vector: {
+        color: `./screenshots/${version}/yacht-vector.svg`,
+        outline: `./screenshots/${version}/yacht-outline.svg`,
+        alt: { ru: "Текущий векторный результат для яхты", en: "Current vector result for the yacht" }
+      },
+      palette: [{ number: 1, hex: "#000000" }, { number: 2, hex: "#ffffff" }]
+    },
+    {
+      id: "mountain",
+      title: { ru: "Горный пейзаж", en: "Mountain scene" },
+      aspectRatio: "320 / 213",
+      raster: {
+        src: "./screenshots/v0.2.20/mountain-original.svg",
+        alt: { ru: "Уменьшенное исходное фото горного пейзажа", en: "Reduced source photo of a mountain scene" }
+      },
+      vector: {
+        color: `./screenshots/${version}/mountain-vector.svg`,
+        outline: `./screenshots/${version}/mountain-outline.svg`,
+        alt: { ru: "Текущий векторный результат для гор", en: "Current vector result for the mountain scene" }
+      },
+      palette: [{ number: 1, hex: "#000000" }, { number: 2, hex: "#ffffff" }]
     }
   ]
 };

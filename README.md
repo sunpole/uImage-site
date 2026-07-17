@@ -25,7 +25,7 @@ npm run new:patch -- v0.3.0 2026-08-01
 
 Команда создаст `content/releases/v0.3.0.json`. Заполните короткий заголовок, описание, до четырёх изменений и следующий шаг на русском и английском.
 
-Для каждого нового патчноута добавьте утверждённый визуальный материал. Обычное изображение указывается в `screenshots`; статическое сравнение разрешённых входов и результатов — в `comparisons`. Новые файлы хранятся в `public/screenshots/v0.3.0/`, снабжаются двуязычными описаниями и проверяются командой `npm run check`. После этого:
+Для каждого нового патчноута начиная с v0.2.28 добавьте ровно два сравнения со шторкой в `comparisons`: яхту и горы. Каждое сравнение содержит разрешённый растр, текущий цветной вектор и чёрно-белый вариант с контурами и номерами. Отдельные `screenshots` правило не выполняют. Новые файлы хранятся в `public/screenshots/v0.3.0/`, снабжаются двуязычными описаниями и проверяются командой `npm run check`. После этого:
 
 ```bash
 npm run check
@@ -56,7 +56,7 @@ npm run new:patch -- v0.3.0 2026-08-01
 
 Edit the generated `content/releases/v0.3.0.json`: use a short title, a plain summary, up to four changes, and one next step in both languages.
 
-For every new patch note, add approved visual media. Use `screenshots` for a regular image or `comparisons` for a static comparison of approved inputs and outputs. Store new files in `public/screenshots/v0.3.0/`, add bilingual alt text, and validate them with `npm run check`. Then run:
+For every new patch note from v0.2.28 onward, add exactly two curtain comparisons under `comparisons`: yacht and mountain. Each comparison contains the approved raster, the current color vector, and a black-and-white outline-and-number mode. Standalone `screenshots` do not satisfy the rule. Store new files in `public/screenshots/v0.3.0/`, add bilingual alt text, and validate them with `npm run check`. Then run:
 
 ```bash
 npm run check

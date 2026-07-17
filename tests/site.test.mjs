@@ -37,11 +37,31 @@ test("patch notes use short user-facing fields", async () => {
 });
 
 test("new patch notes include an approved bilingual image", async () => {
-  const release = JSON.parse(await readFile(new URL("content/releases/v0.2.25.json", root), "utf8"));
-  assert.ok(release.screenshots.length >= 1);
-  for (const screenshot of release.screenshots) {
-    assert.ok(screenshot.alt.ru);
-    assert.ok(screenshot.alt.en);
-    await access(new URL(`public/${screenshot.src.slice(2)}`, root));
+  const release = JSON.parse(await readFile(new URL("content/releases/v0.2.26.json", root), "utf8"));
+  assert.ok(release.comparisons.length >= 1);
+  for (const comparison of release.comparisons) {
+    assert.ok(comparison.raster.alt.ru);
+    assert.ok(comparison.raster.alt.en);
+    await access(new URL(`public/${comparison.raster.src.slice(2)}`, root));
+    await access(new URL(`public/${comparison.vector.color.slice(2)}`, root));
+    await access(new URL(`public/${comparison.vector.outline.slice(2)}`, root));
   }
+});
+
+test("latest patch provides two accessible raster-to-vector comparisons", async () => {
+  const [release, app] = await Promise.all([
+    readFile(new URL("content/releases/v0.2.26.json", root), "utf8").then(JSON.parse),
+    readFile(new URL("public/app.mjs", root), "utf8"),
+  ]);
+  assert.equal(release.comparisons.length, 2);
+  assert.deepEqual(release.replacesScreenshotsFor, ["v0.2.25"]);
+  assert.match(app, /range\.type = "range"/);
+  assert.match(app, /aria-pressed/);
+  assert.match(app, /comparison\.vector\.outline/);
+});
+
+test("comparison notes stay honest about screen colors and real paints", async () => {
+  const release = JSON.parse(await readFile(new URL("content/releases/v0.2.26.json", root), "utf8"));
+  assert.match(release.ru.next, /реальн.*краск/i);
+  assert.match(release.en.next, /real paints/i);
 });

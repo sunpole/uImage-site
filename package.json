@@ -4,11 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "assets:comparison": "node scripts/create-comparison-assets.mjs",
     "new:patch": "node scripts/new-patch.mjs",
+    "preview": "node scripts/preview.mjs",
     "validate": "node scripts/validate.mjs",
     "test": "node --test",
     "build": "node scripts/build.mjs",
-    "check": "npm run validate && npm test && npm run build"
+    "check": "npm run assets:comparison && npm run validate && npm test && npm run build"
   },
   "engines": {
     "node": ">=22 <23",

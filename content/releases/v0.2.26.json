@@ -1,0 +1,76 @@
+{
+  "version": "v0.2.26",
+  "date": "2026-07-17",
+  "ru": {
+    "title": "Два настоящих сравнения вместо иллюстрации",
+    "summary": "Теперь можно провести шторку по яхте и горному пейзажу и сразу сравнить исходное фото с результатом uImage.",
+    "changes": [
+      "Двигайте шторку мышью, пальцем или клавишами со стрелками.",
+      "Векторную часть можно переключить между цветом и чёрно-белыми границами с номерами.",
+      "Под каждым примером показана палитра цветов изображения."
+    ],
+    "next": "Дальше свяжем цвета изображения с проверенными реальными красками."
+  },
+  "en": {
+    "title": "Two real comparisons replace the illustration",
+    "summary": "Slide across the yacht and mountain scene to compare each source photo with the current uImage result.",
+    "changes": [
+      "Move the curtain with a mouse, finger, or arrow keys.",
+      "Switch the vector side between color and black-and-white outlines with numbers.",
+      "See the image color palette below each example."
+    ],
+    "next": "Next we will connect image colors to verified real paints."
+  },
+  "screenshots": [],
+  "replacesScreenshotsFor": ["v0.2.25"],
+  "comparisons": [
+    {
+      "id": "yacht",
+      "title": { "ru": "Яхта", "en": "Yacht" },
+      "aspectRatio": "16 / 9",
+      "raster": {
+        "src": "./screenshots/v0.2.20/yacht-original.svg",
+        "alt": { "ru": "Уменьшенное исходное фото яхты", "en": "Reduced source photo of a yacht" }
+      },
+      "vector": {
+        "color": "./screenshots/v0.2.20/yacht-vector.svg",
+        "outline": "./screenshots/v0.2.26/yacht-outline.svg",
+        "alt": { "ru": "Векторный результат uImage для яхты", "en": "uImage vector result for the yacht" }
+      },
+      "palette": [
+        { "number": 1, "hex": "#1c151d" }, { "number": 2, "hex": "#360f09" },
+        { "number": 3, "hex": "#4e3637" }, { "number": 4, "hex": "#764434" },
+        { "number": 5, "hex": "#337061" }, { "number": 6, "hex": "#855f5a" },
+        { "number": 7, "hex": "#a15e43" }, { "number": 8, "hex": "#ab8987" },
+        { "number": 9, "hex": "#d57e56" }, { "number": 10, "hex": "#cb866e" },
+        { "number": 11, "hex": "#97a58e" }, { "number": 12, "hex": "#cfbab3" },
+        { "number": 13, "hex": "#ebb390" }, { "number": 14, "hex": "#b6c1d4" },
+        { "number": 15, "hex": "#fae1c1" }, { "number": 16, "hex": "#f7f7f6" }
+      ]
+    },
+    {
+      "id": "mountain",
+      "title": { "ru": "Горный пейзаж", "en": "Mountain scene" },
+      "aspectRatio": "320 / 213",
+      "raster": {
+        "src": "./screenshots/v0.2.20/mountain-original.svg",
+        "alt": { "ru": "Уменьшенное исходное фото горного пейзажа", "en": "Reduced source photo of a mountain scene" }
+      },
+      "vector": {
+        "color": "./screenshots/v0.2.20/mountain-vector.svg",
+        "outline": "./screenshots/v0.2.26/mountain-outline.svg",
+        "alt": { "ru": "Векторный результат uImage для горного пейзажа", "en": "uImage vector result for the mountain scene" }
+      },
+      "palette": [
+        { "number": 1, "hex": "#232115" }, { "number": 2, "hex": "#4a371c" },
+        { "number": 3, "hex": "#464437" }, { "number": 4, "hex": "#49461d" },
+        { "number": 5, "hex": "#264f60" }, { "number": 6, "hex": "#6f491c" },
+        { "number": 7, "hex": "#65591b" }, { "number": 8, "hex": "#92651b" },
+        { "number": 9, "hex": "#837140" }, { "number": 10, "hex": "#807520" },
+        { "number": 11, "hex": "#837768" }, { "number": 12, "hex": "#6b7e88" },
+        { "number": 13, "hex": "#b7a06f" }, { "number": 14, "hex": "#c4baa8" },
+        { "number": 15, "hex": "#b4c8cf" }, { "number": 16, "hex": "#d5d8d6" }
+      ]
+    }
+  ]
+}

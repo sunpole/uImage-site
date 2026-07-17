@@ -38,13 +38,42 @@ for (const file of files) {
   }
 
   if (!Array.isArray(release.screenshots)) throw new Error(`${file}: screenshots must be an array.`);
-  if (atLeast(versionParts(release.version), imageRequiredFrom) && release.screenshots.length === 0) {
+  if (release.comparisons !== undefined && !Array.isArray(release.comparisons)) {
+    throw new Error(`${file}: comparisons must be an array when present.`);
+  }
+  const approvedMediaCount = release.screenshots.length + (release.comparisons?.length ?? 0);
+  if (atLeast(versionParts(release.version), imageRequiredFrom) && approvedMediaCount === 0) {
     throw new Error(`${file}: releases from v0.2.25 require at least one approved image.`);
   }
   for (const screenshot of release.screenshots) {
     if (!screenshot.src?.startsWith("./screenshots/")) throw new Error(`${file}: screenshot must use ./screenshots/.`);
     if (!screenshot.alt?.ru || !screenshot.alt?.en) throw new Error(`${file}: screenshot alt text is required in both languages.`);
     await access(join(publicDirectory, screenshot.src.slice(2)));
+  }
+
+  for (const comparison of release.comparisons ?? []) {
+    if (!comparison.id || !comparison.title?.ru || !comparison.title?.en) throw new Error(`${file}: comparison title is required in both languages.`);
+    if (!/^\d+\s*\/\s*\d+$/.test(comparison.aspectRatio)) throw new Error(`${file}: comparison aspectRatio must be numeric.`);
+    if (!comparison.raster?.src?.startsWith("./screenshots/") || !comparison.raster.alt?.ru || !comparison.raster.alt?.en) {
+      throw new Error(`${file}: comparison raster and bilingual alt text are required.`);
+    }
+    if (!comparison.vector?.color?.startsWith("./screenshots/") || !comparison.vector?.outline?.startsWith("./screenshots/")
+      || !comparison.vector.alt?.ru || !comparison.vector.alt?.en) {
+      throw new Error(`${file}: comparison vector modes and bilingual alt text are required.`);
+    }
+    if (!Array.isArray(comparison.palette) || comparison.palette.length < 2
+      || comparison.palette.some(color => !Number.isInteger(color.number) || !/^#[0-9a-f]{6}$/i.test(color.hex))) {
+      throw new Error(`${file}: comparison palette must contain numbered hex colors.`);
+    }
+    for (const src of [comparison.raster.src, comparison.vector.color, comparison.vector.outline]) {
+      await access(join(publicDirectory, src.slice(2)));
+    }
+  }
+
+  if (release.replacesScreenshotsFor !== undefined
+    && (!Array.isArray(release.replacesScreenshotsFor)
+      || release.replacesScreenshotsFor.some(version => !/^v\d+\.\d+\.\d+$/.test(version)))) {
+    throw new Error(`${file}: replacesScreenshotsFor must contain release versions.`);
   }
 }
 

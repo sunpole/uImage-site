@@ -14,6 +14,7 @@
 ```bash
 node --version
 npm run check
+npm run preview
 ```
 
 ### Добавить патчноут
@@ -24,7 +25,7 @@ npm run new:patch -- v0.3.0 2026-08-01
 
 Команда создаст `content/releases/v0.3.0.json`. Заполните короткий заголовок, описание, до четырёх изменений и следующий шаг на русском и английском.
 
-Для каждого нового патчноута положите утверждённое изображение в `public/screenshots/v0.3.0/` и добавьте путь с двуязычным описанием в поле `screenshots`. После этого:
+Для каждого нового патчноута добавьте утверждённый визуальный материал. Обычное изображение указывается в `screenshots`; статическое сравнение разрешённых входов и результатов — в `comparisons`. Новые файлы хранятся в `public/screenshots/v0.3.0/`, снабжаются двуязычными описаниями и проверяются командой `npm run check`. После этого:
 
 ```bash
 npm run check
@@ -44,6 +45,7 @@ Local checks require Node.js 22.x. macOS and Windows use the same commands:
 ```bash
 node --version
 npm run check
+npm run preview
 ```
 
 ### Add a patch note
@@ -54,7 +56,7 @@ npm run new:patch -- v0.3.0 2026-08-01
 
 Edit the generated `content/releases/v0.3.0.json`: use a short title, a plain summary, up to four changes, and one next step in both languages.
 
-For every new patch note, place an approved image in `public/screenshots/v0.3.0/` and add its path with bilingual alt text to `screenshots`. Then run:
+For every new patch note, add approved visual media. Use `screenshots` for a regular image or `comparisons` for a static comparison of approved inputs and outputs. Store new files in `public/screenshots/v0.3.0/`, add bilingual alt text, and validate them with `npm run check`. Then run:
 
 ```bash
 npm run check

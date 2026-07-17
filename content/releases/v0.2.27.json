@@ -1,0 +1,33 @@
+{
+  "version": "v0.2.27",
+  "date": "2026-07-17",
+  "ru": {
+    "title": "Большие фото проходят отдельную проверку",
+    "summary": "Теперь uImage отдельно проверяет большие исходные фото, прежде чем мы включаем более сложную очистку изображения.",
+    "changes": [
+      "Проверили яхту и горный пейзаж в нескольких размерах.",
+      "Результаты повторяются одинаково на Windows, macOS и Linux.",
+      "Сложные случаи остаются выключенными, пока качество недостаточно надёжно."
+    ],
+    "next": "Дальше добавим лица, животных, архитектуру и надписи."
+  },
+  "en": {
+    "title": "Large photos get a dedicated check",
+    "summary": "uImage now checks large source photos separately before we enable more advanced image cleanup.",
+    "changes": [
+      "We checked the yacht and mountain scene at several sizes.",
+      "Results repeat consistently on Windows, macOS, and Linux.",
+      "Difficult cases stay off until the quality is reliable enough."
+    ],
+    "next": "Next we will add faces, animals, architecture, and lettering."
+  },
+  "screenshots": [
+    {
+      "src": "./screenshots/v0.2.27/mountain-holdout.png",
+      "alt": {
+        "ru": "Реальный векторный результат текущей проверки горного пейзажа uImage",
+        "en": "Real vector result from the current uImage mountain-scene check"
+      }
+    }
+  ]
+}

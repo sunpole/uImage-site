@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">uImage important detail checks</title>
+  <desc id="desc">A stylized yacht and mountain road with magnifying circles and green check marks.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7f1"/>
+      <stop offset="1" stop-color="#eef5ff"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd1dc"/>
+      <stop offset="1" stop-color="#377f9d"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b8dcf5"/>
+      <stop offset="1" stop-color="#f8d5b7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#28435f" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" rx="40" fill="url(#background)"/>
+  <circle cx="1070" cy="82" r="120" fill="#ff765d" opacity="0.1"/>
+  <circle cx="102" cy="565" r="150" fill="#4ea7c4" opacity="0.1"/>
+
+  <g filter="url(#shadow)">
+    <rect x="88" y="82" width="470" height="466" rx="34" fill="#fff"/>
+    <rect x="642" y="82" width="470" height="466" rx="34" fill="#fff"/>
+  </g>
+
+  <g clip-path="url(#leftClip)">
+    <rect x="116" y="110" width="414" height="350" rx="24" fill="#d9edf5"/>
+    <path d="M116 300C190 276 268 304 335 286C402 268 470 285 530 264V460H116Z" fill="url(#sea)"/>
+    <path d="M244 335H441L410 385H276Z" fill="#f0b28d" stroke="#273a4d" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M331 165V341" fill="none" stroke="#273a4d" stroke-width="9" stroke-linecap="round"/>
+    <path d="M325 178L252 315H325Z" fill="#fff8e8" stroke="#273a4d" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M340 196L406 315H340Z" fill="#ff765d" opacity="0.82" stroke="#273a4d" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M132 409C206 390 269 423 339 403C407 384 468 416 522 397" fill="none" stroke="#d7f7ff" stroke-width="10" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <g clip-path="url(#rightClip)">
+    <rect x="670" y="110" width="414" height="350" rx="24" fill="url(#sky)"/>
+    <path d="M670 322L765 210L832 272L909 168L1084 338V460H670Z" fill="#6f8b72"/>
+    <path d="M670 354L758 254L816 306L907 199L1084 364V460H670Z" fill="#3f695d"/>
+    <path d="M873 460C861 418 872 375 905 332C929 301 941 268 939 228" fill="none" stroke="#f5d6a6" stroke-width="58" stroke-linecap="round"/>
+    <path d="M873 460C861 418 872 375 905 332C929 301 941 268 939 228" fill="none" stroke="#fff8e8" stroke-width="6" stroke-dasharray="18 20" stroke-linecap="round"/>
+  </g>
+
+  <defs>
+    <clipPath id="leftClip"><rect x="116" y="110" width="414" height="350" rx="24"/></clipPath>
+    <clipPath id="rightClip"><rect x="670" y="110" width="414" height="350" rx="24"/></clipPath>
+  </defs>
+
+  <g fill="none" stroke="#ff765d" stroke-width="8">
+    <circle cx="331" cy="222" r="58"/>
+    <path d="M372 263L414 305" stroke-linecap="round"/>
+    <circle cx="928" cy="293" r="58"/>
+    <path d="M969 334L1011 376" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <circle cx="492" cy="498" r="42" fill="#2caa78"/>
+    <path d="M472 498L487 513L514 482" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1046" cy="498" r="42" fill="#2caa78"/>
+    <path d="M1026 498L1041 513L1068 482" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g fill="#273a4d" font-family="Arial, sans-serif">
+    <text x="116" y="516" font-size="31" font-weight="700">uImage</text>
+    <text x="670" y="516" font-size="31" font-weight="700">v0.2.25</text>
+  </g>
+</svg>

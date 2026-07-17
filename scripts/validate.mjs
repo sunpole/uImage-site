@@ -10,6 +10,13 @@ const files = (await readdir(contentDirectory)).filter(file => file.endsWith(".j
 if (!files.length) throw new Error("At least one patch note is required.");
 
 const versions = new Set();
+const imageRequiredFrom = [0, 2, 25];
+function versionParts(version) { return version.slice(1).split(".").map(Number); }
+function atLeast(left, right) {
+  return left[0] > right[0]
+    || (left[0] === right[0] && (left[1] > right[1]
+      || (left[1] === right[1] && left[2] >= right[2])));
+}
 for (const file of files) {
   const release = JSON.parse(await readFile(join(contentDirectory, file), "utf8"));
   if (!/^v\d+\.\d+\.\d+$/.test(release.version)) throw new Error(`${file}: invalid version.`);
@@ -31,6 +38,9 @@ for (const file of files) {
   }
 
   if (!Array.isArray(release.screenshots)) throw new Error(`${file}: screenshots must be an array.`);
+  if (atLeast(versionParts(release.version), imageRequiredFrom) && release.screenshots.length === 0) {
+    throw new Error(`${file}: releases from v0.2.25 require at least one approved image.`);
+  }
   for (const screenshot of release.screenshots) {
     if (!screenshot.src?.startsWith("./screenshots/")) throw new Error(`${file}: screenshot must use ./screenshots/.`);
     if (!screenshot.alt?.ru || !screenshot.alt?.en) throw new Error(`${file}: screenshot alt text is required in both languages.`);

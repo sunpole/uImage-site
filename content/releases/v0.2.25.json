@@ -1,0 +1,33 @@
+{
+  "version": "v0.2.25",
+  "date": "2026-07-17",
+  "ru": {
+    "title": "Важные детали проходят отдельную проверку",
+    "summary": "Мы добавили постоянную проверку на примерах, чтобы будущая очистка изображения бережнее относилась к мелким важным деталям.",
+    "changes": [
+      "Яхта и горный пейзаж теперь входят в повторяемую проверку важных деталей.",
+      "Новые настройки не включаются автоматически, пока результат недостаточно надёжен.",
+      "Одинаковая проверка проходит на Windows, macOS и Linux."
+    ],
+    "next": "Дальше добавим больше разных сюжетов: лица, животных, архитектуру, надписи и сложное освещение."
+  },
+  "en": {
+    "title": "Important details get a dedicated check",
+    "summary": "We added a repeatable example-based check so future image cleanup can treat small important details more carefully.",
+    "changes": [
+      "The yacht and mountain scene now take part in a repeatable detail check.",
+      "New settings stay off until the result is reliable enough.",
+      "The same check passes on Windows, macOS, and Linux."
+    ],
+    "next": "Next we will add more varied scenes: faces, animals, architecture, lettering, and difficult lighting."
+  },
+  "screenshots": [
+    {
+      "src": "./screenshots/v0.2.25/detail-check.svg",
+      "alt": {
+        "ru": "Иллюстрация проверки важных деталей на яхте и горном пейзаже",
+        "en": "Illustration of important-detail checks on a yacht and mountain scene"
+      }
+    }
+  ]
+}

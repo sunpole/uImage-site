@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 
 const root = new URL("..", import.meta.url);
@@ -34,4 +34,14 @@ test("patch notes use short user-facing fields", async () => {
   assert.ok(release.en.changes.length <= 4);
   assert.ok(release.ru.summary.length <= 180);
   assert.ok(release.en.summary.length <= 180);
+});
+
+test("new patch notes include an approved bilingual image", async () => {
+  const release = JSON.parse(await readFile(new URL("content/releases/v0.2.25.json", root), "utf8"));
+  assert.ok(release.screenshots.length >= 1);
+  for (const screenshot of release.screenshots) {
+    assert.ok(screenshot.alt.ru);
+    assert.ok(screenshot.alt.en);
+    await access(new URL(`public/${screenshot.src.slice(2)}`, root));
+  }
 });

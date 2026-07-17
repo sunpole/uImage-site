@@ -36,7 +36,15 @@ const template = {
     changes: ["First visible change."],
     next: "What we plan to improve next."
   },
-  screenshots: []
+  screenshots: [
+    {
+      src: `./screenshots/${version}/approved-image.svg`,
+      alt: {
+        ru: "Короткое описание утверждённого изображения",
+        en: "Short description of the approved image"
+      }
+    }
+  ]
 };
 
 await writeFile(target, `${JSON.stringify(template, null, 2)}\n`);

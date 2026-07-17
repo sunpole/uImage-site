@@ -24,7 +24,7 @@ npm run new:patch -- v0.3.0 2026-08-01
 
 Команда создаст `content/releases/v0.3.0.json`. Заполните короткий заголовок, описание, до четырёх изменений и следующий шаг на русском и английском.
 
-Если нужен скриншот, положите его в `public/screenshots/v0.3.0/` и добавьте путь в поле `screenshots`. После этого:
+Для каждого нового патчноута положите утверждённое изображение в `public/screenshots/v0.3.0/` и добавьте путь с двуязычным описанием в поле `screenshots`. После этого:
 
 ```bash
 npm run check
@@ -54,7 +54,7 @@ npm run new:patch -- v0.3.0 2026-08-01
 
 Edit the generated `content/releases/v0.3.0.json`: use a short title, a plain summary, up to four changes, and one next step in both languages.
 
-For screenshots, place images in `public/screenshots/v0.3.0/` and add their paths to `screenshots`. Then run:
+For every new patch note, place an approved image in `public/screenshots/v0.3.0/` and add its path with bilingual alt text to `screenshots`. Then run:
 
 ```bash
 npm run check

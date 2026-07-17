@@ -1,0 +1,75 @@
+{
+  "version": "v0.2.30",
+  "date": "2026-07-17",
+  "ru": {
+    "title": "Все фрагменты получили номера",
+    "summary": "Для углового фрагмента в горах найдено безопасное место для номера. Яхта сохранила полный набор номеров.",
+    "changes": [
+      "На обоих примерах теперь нет фрагментов без номера.",
+      "Цвета и границы областей не изменялись.",
+      "Это ещё тест при 160 пикселях: выносок пока много."
+    ],
+    "next": "Дальше сравним безопасное объединение и увеличение слишком маленьких областей."
+  },
+  "en": {
+    "title": "Every fragment now has a number",
+    "summary": "The mountain corner fragment now has a safe place for its number. The yacht keeps its complete set of numbers.",
+    "changes": [
+      "Neither example now has a fragment without a number.",
+      "Colors and region boundaries were not changed.",
+      "This is still a 160-pixel test: many callouts remain."
+    ],
+    "next": "Next we will compare safe merging and enlargement for regions that are too small."
+  },
+  "screenshots": [],
+  "comparisons": [
+    {
+      "id": "yacht",
+      "title": { "ru": "Яхта — 160 пикселей", "en": "Yacht — 160 pixels" },
+      "aspectRatio": "16 / 9",
+      "raster": {
+        "src": "./screenshots/v0.2.20/yacht-original.svg",
+        "alt": { "ru": "Уменьшенное исходное фото яхты", "en": "Reduced source photo of a yacht" }
+      },
+      "vector": {
+        "color": "./screenshots/v0.2.30/yacht-vector.svg",
+        "outline": "./screenshots/v0.2.30/yacht-outline.svg",
+        "alt": { "ru": "Яхта с полным набором номеров при 160 пикселях", "en": "Yacht with a complete set of numbers at 160 pixels" }
+      },
+      "palette": [
+        { "number": 1, "hex": "#251315" }, { "number": 2, "hex": "#523a3a" },
+        { "number": 3, "hex": "#63392e" }, { "number": 4, "hex": "#8d513b" },
+        { "number": 5, "hex": "#8f6963" }, { "number": 6, "hex": "#66826b" },
+        { "number": 7, "hex": "#b76846" }, { "number": 8, "hex": "#b3735e" },
+        { "number": 9, "hex": "#a69f87" }, { "number": 10, "hex": "#b59f9f" },
+        { "number": 11, "hex": "#e39c7b" }, { "number": 12, "hex": "#b7c1d4" },
+        { "number": 13, "hex": "#edba98" }, { "number": 14, "hex": "#dfc7b9" },
+        { "number": 15, "hex": "#fce7c7" }, { "number": 16, "hex": "#f6f7f6" }
+      ]
+    },
+    {
+      "id": "mountain",
+      "title": { "ru": "Горный пейзаж — 160 пикселей", "en": "Mountain scene — 160 pixels" },
+      "aspectRatio": "160 / 107",
+      "raster": {
+        "src": "./screenshots/v0.2.20/mountain-original.svg",
+        "alt": { "ru": "Уменьшенное исходное фото горного пейзажа", "en": "Reduced source photo of a mountain scene" }
+      },
+      "vector": {
+        "color": "./screenshots/v0.2.30/mountain-vector.svg",
+        "outline": "./screenshots/v0.2.30/mountain-outline.svg",
+        "alt": { "ru": "Горный пейзаж без пропущенных номеров при 160 пикселях", "en": "Mountain scene with no missing numbers at 160 pixels" }
+      },
+      "palette": [
+        { "number": 1, "hex": "#221f14" }, { "number": 2, "hex": "#352f19" },
+        { "number": 3, "hex": "#474220" }, { "number": 4, "hex": "#583d18" },
+        { "number": 5, "hex": "#244c5c" }, { "number": 6, "hex": "#59501e" },
+        { "number": 7, "hex": "#585348" }, { "number": 8, "hex": "#795a1f" },
+        { "number": 9, "hex": "#736b21" }, { "number": 10, "hex": "#5b737f" },
+        { "number": 11, "hex": "#8c7b45" }, { "number": 12, "hex": "#8d8171" },
+        { "number": 13, "hex": "#8f999e" }, { "number": 14, "hex": "#bca87c" },
+        { "number": 15, "hex": "#c7bcab" }, { "number": 16, "hex": "#cbd3d5" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": "v0.2.24",
+  "date": "2026-07-17",
+  "ru": {
+    "title": "Выноски лучше обходят важные границы",
+    "summary": "Движок теперь учитывает заметные границы изображения при сохранении мелких деталей и выборе линии к внешнему номеру.",
+    "changes": [
+      "Контрастные детали реже объединяются только ради размещения номера.",
+      "Для каждой выноски сравниваются все допустимые прямые маршруты.",
+      "Предпочтение получают линии с меньшим числом пересечений заметных границ.",
+      "На простых 8-цветных тестах все номера обеих фотографий снова размещены."
+    ],
+    "next": "Дальше проверим защиту деталей на полноразмерных изображениях и добавим больше возможностей ручной правки."
+  },
+  "en": {
+    "title": "Callouts route around important edges more clearly",
+    "summary": "The engine now considers visible image boundaries when preserving small details and choosing a path to an external number.",
+    "changes": [
+      "High-contrast details are less likely to be merged only to make room for a number.",
+      "Every callout compares all valid straight-line routes within its limits.",
+      "Routes crossing fewer visible boundaries are preferred.",
+      "The simple 8-color tests still place every number on both photographs."
+    ],
+    "next": "Next we will validate detail protection on full-size images and add more operator editing controls."
+  },
+  "screenshots": []
+}
